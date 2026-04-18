@@ -37,6 +37,7 @@
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsPerson.cs" />
+    <Compile Include="ctrlPersonCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlPersonCard.Designer.cs">
+      <DependentUpon>ctrlPersonCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,19 +64,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ctrlPersonCard.resx">
+      <DependentUpon>ctrlPersonCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -77,6 +92,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-gender-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-gender-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\gender-fluid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\world_south_america.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\calendar_month.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-gender-25 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-person-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\personal_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\person_man.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DLMSystem
 {
-    public partial class Form1 : Form
+    public partial class ctrlPersonCard : UserControl
     {
-        public Form1()
+        public ctrlPersonCard()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void gbPersonCard_Enter(object sender, EventArgs e)
         {
 
         }
